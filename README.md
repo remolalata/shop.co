@@ -39,3 +39,5 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 # shop.co
+figma design
+[SHOP.CO](https://www.figma.com/file/tzmVfANFxET0meTrfhjJGE/E-commerce-Website-Template-(Freebie)-(Community)?node-id=0%3A1&mode=dev)
