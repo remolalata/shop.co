@@ -1,10 +1,16 @@
-import Layout from "@/components/Layout/layout"
+import Layout from "@/components/Layout/layout";
+import Head from "next/head";
 
 const Home = () => {
   return (
-    <Layout>
-      <h1>Home</h1>
-    </Layout>
+    <>
+      <Head>
+        <title>SHOP.CO</title>
+      </Head>
+      <Layout>
+        <h1>Home</h1>
+      </Layout>
+    </>
   )
 }
 

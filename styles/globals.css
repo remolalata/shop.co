@@ -18,6 +18,11 @@
   html {
     font-family: "Satoshi", system-ui, sans-serif;
   }
+
+  .search-input-group,
+  .search-input-group input {
+    background-color: #F0F0F0;
+  }
 }
 
 @layer utilities {
