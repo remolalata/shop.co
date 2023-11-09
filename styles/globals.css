@@ -15,6 +15,18 @@
     src: url("./fonts/satoshi/Satoshi-Medium.otf");
   }
 
+  @font-face {
+    font-family: "Satoshi Bold";
+    font-weight: 700;
+    src: url("./fonts/satoshi/Satoshi-Bold.otf");
+  }
+
+  @font-face {
+    font-family: "Integral Bold";
+    font-weight: 700;
+    src: url("./fonts/integral-cf/IntegralCF-Bold.otf");
+  }
+
   html {
     font-family: "Satoshi", system-ui, sans-serif;
   }
