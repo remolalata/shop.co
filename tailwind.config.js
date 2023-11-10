@@ -13,12 +13,18 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       backgroundColor: {
-        'f2f0f1': '#F2F0F1'
+        'f2f0f1': '#F2F0F1',
+        'discount-pill': '#ff3333',
+        'featured-style': '#F0F0F0',
+        'footer': '#F0F0F0'
       },
       height: {
         'banner': '663px',
         'cta-h': '52px',
-        'product': '298px'
+        'product': '298px',
+        'view-all': '52px',
+        'featured-styles-item': '190px',
+        'featured-styles-item-md': '289px'
       },
       fontFamily: {
         'integral-bold': 'Integral Bold',
@@ -34,8 +40,18 @@ module.exports = {
       },
       width: {
         'cta-w': '210px',
-        'product': '295px'
-
+        'product': '290px',
+        'view-all': '218px'
+      },
+      colors: {
+        'discount-pill': '#ff3333',
+        'payment-method-border': '#D6DCE5'
+      },
+      backgroundImage: {
+        'featured-style-casual': "url('/images/featured-styles/casual.png')",
+        'featured-style-formal': "url('/images/featured-styles/formal.png')",
+        'featured-style-party': "url('/images/featured-styles/party.png')",
+        'featured-style-gym': "url('/images/featured-styles/gym.png')"
       }
     },
     container: {

@@ -35,6 +35,10 @@
   .search-input-group input {
     background-color: #F0F0F0;
   }
+
+  .rating-stars span {
+    pointer-events: none;
+  }
 }
 
 @layer utilities {

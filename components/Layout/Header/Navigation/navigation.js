@@ -31,7 +31,7 @@ const Navigation = () => {
                     </Button>
                 </div>
                 <div className="logo">
-                    <Image src={LOGO_URL} alt="Shop.co" width={160} height={22} alt="" />
+                    <Image src={LOGO_URL} alt="Shop.co" width={160} height={22} />
                 </div>
                 <div className="hidden md:block">
                     <nav>
@@ -61,10 +61,8 @@ const Navigation = () => {
                     </Link>
                 </div>
             </div>
-            
-            <div className="container px-4 md:hidden">
-                {state.displayMobileSearchBar && <SearchInputGroup />}
-            </div>
+
+            {state.displayMobileSearchBar && <div className="container px-4 mb-4 md:hidden"><SearchInputGroup /></div>}
         </div>
     )
 }

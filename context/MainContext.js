@@ -1,5 +1,5 @@
 import { createContext, useContext, useReducer } from "react";
-import { SET_TOGGLE_MENU, SET_DISPLAY_TOPBAR, SET_DISPLAY_MOBILE_SEARCH_BAR, SET_SHOP_METRIC, SET_BRANDS, SET_PRODUCTS } from "@/actions/mainActions";
+import { SET_TOGGLE_MENU, SET_DISPLAY_TOPBAR, SET_DISPLAY_MOBILE_SEARCH_BAR, SET_SHOP_METRIC, SET_BRANDS, SET_PRODUCTS, SET_PRODUCT_STYLES } from "@/actions/mainActions";
 
 const MainContext = createContext();
 
@@ -11,7 +11,8 @@ const initialState = {
     displayMobileSearchBar: false,
     shopMetric: [],
     brands: [],
-    products: []
+    products: [],
+    productStyles: []
 }
 
 const reducer = (state, action) => {
@@ -28,6 +29,8 @@ const reducer = (state, action) => {
             return { ...state, brands: action.payload }
         case SET_PRODUCTS:
             return { ...state, products: action.payload }
+        case SET_PRODUCT_STYLES:
+            return { ...state, productStyles: action.payload }
         default:
             return state;
     }

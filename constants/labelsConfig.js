@@ -1,6 +1,11 @@
+export const CURRENCY_CODE = "$";
 export const HEADING_LABEL = "FIND CLOTHES THAT MATCHES YOUR STYLE";
 export const SUBHEADING_LABEL = "Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.";
 export const SHOP_NOW = "Show Now";
 export const ALL_PRODUCTS = "ALL PRODUCTS";
 export const NEW_ARRIVALS = "NEW ARRIVALS";
 export const TOP_SELLING = "TOP SELLING";
+export const VIEW_ALL = "View All";
+export const BROWSE_BY_DRESS_STYLE = "BROWSE BY DRESS STYLE";
+export const FOOTER_INFORMATION = "We have clothes that suits your style and which you’re proud to wear. From women to men.";
+export const FOOTER_COPYRIGHT = "Shop.co © 2000-2023, All Rights Reserved";

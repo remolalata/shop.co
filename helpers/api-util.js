@@ -1,4 +1,4 @@
-import { SHOP_METRIC_ENDPOINT, BRANDS_ENDPOINT, PRODUCTS_ENDPOINT } from "@/constants/apiEndpoints";
+import { SHOP_METRIC_ENDPOINT, BRANDS_ENDPOINT, PRODUCTS_ENDPOINT, PRODUCT_STYLES_ENDPOINT } from "@/constants/apiEndpoints";
 import { fetchJSONfromApi } from "@/utils/utils";
 
 export const getAllShopMetric = async () => {

@@ -1,5 +1,13 @@
+import FooterInformation from "./FooterInformation/footerInformation";
+
 const Footer = () => {
-    return <h1>Footer</h1>
+    return (
+        <footer className="bg-footer pb-20">
+            <div className="container px-4 ">
+                <FooterInformation />
+            </div>
+        </footer>
+    )
 }
 
 export default Footer;
