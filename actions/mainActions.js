@@ -5,6 +5,7 @@ export const SET_SHOP_METRIC = "SET_SHOP_METRIC";
 export const SET_BRANDS = "SET_BRANDS";
 export const SET_PRODUCTS = "SET_PRODUCTS";
 export const SET_PRODUCT_STYLES = "SET_PRODUCT_STYLES";
+export const SET_REVIEWS = "SET_REVIEWS";
 
 export const setToggleMenu = (data) => {
     return { type: SET_TOGGLE_MENU, payload: data };
@@ -32,4 +33,8 @@ export const setProducts = (data) => {
 
 export const setProductStyle = (data) => {
     return { type: SET_PRODUCT_STYLES, payload: data }
+}
+
+export const setReviews = (data) => {
+    return { type: SET_REVIEWS, payload: data }
 }

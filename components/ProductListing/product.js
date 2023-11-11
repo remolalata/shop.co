@@ -1,7 +1,7 @@
-import ReactStars from "react-rating-stars-component";
 import Image from "next/image";
 
-import { HALF_STAR_ICON_URL, FULL_STAR_ICON_URL, EMPTY_STAR_ICON_URL } from "@/constants/imagePaths";
+import Rating from "../Rating/rating";
+
 import { CURRENCY_CODE } from "@/constants/labelsConfig";
 import { calculateDiscountedPrice } from "@/utils/utils";
 import Link from "next/link";
@@ -14,7 +14,7 @@ const Product = ({ product }) => {
 
     const priceElement = (
         <div className="flex items-center">
-            <h3 className="font-satoshi-bold text-2xl">
+            <h3 className="font-satoshi-bold text-xl md:text-2xl">
                 {CURRENCY_CODE}{discountedPrice !== null ? (
                     <span>
                         {discountedPrice} <span className="text-black/[0.4] ml-1 line-through">{CURRENCY_CODE}260</span>
@@ -35,21 +35,12 @@ const Product = ({ product }) => {
                 <Image src={product.imagePath} width={295} height={298} className="h-full rounded-2xl mb-4" alt={product.name} />
             </div>
 
-            <h3 className="font-satoshi-bold text-xl mt-4">
+            <h3 className="font-satoshi-bold text-base md:text-xl mt-2.5 md:mt-4">
                 <Link href="#">{product.name}</Link>
             </h3>
             <div className="flex items-center my-1">
                 <div>
-                    <ReactStars
-                        classNames="rating-stars"
-                        count={5}
-                        value={product.rating}
-                        isHalf={true}
-                        size={18}
-                        emptyIcon={<Image src={EMPTY_STAR_ICON_URL} height={18} width={18} className="w-[18px] h-[18px]" />}
-                        halfIcon={<Image src={HALF_STAR_ICON_URL} height={18} width={18} className="w-[18px] h-[18px]" />}
-                        filledIcon={<Image src={FULL_STAR_ICON_URL} height={18} width={18} className="w-[18px] h-[18px]" />}
-                    />
+                    <Rating rate={product.rating} />
                 </div>
                 <div className="ml-3 text-sm">
                     <span>{product.rating}/<span className="text-black/[0.6]">5</span></span>

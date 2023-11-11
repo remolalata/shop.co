@@ -10,6 +10,7 @@ import SearchInputGroup from "@/components/SearchInputGroup/searchInputGroup";
 import menuItems from "@/constants/menuConfig";
 
 import { LOGO_URL, HAMBURGER_ICON_URL, SEARCH_MOBILE_ICON_URL, CART_ICON_URL, ACCOUNT_ICON_URL } from "@/constants/imagePaths";
+import { SHOP_CO } from "@/constants/labelsConfig";
 
 const Navigation = () => {
     const { state, dispatch } = useMainContext();
@@ -31,7 +32,9 @@ const Navigation = () => {
                     </Button>
                 </div>
                 <div className="logo">
-                    <Image src={LOGO_URL} alt="Shop.co" width={160} height={22} />
+                    <Link href="/">
+                        <Image src={LOGO_URL} alt={SHOP_CO} width={160} height={22} />
+                    </Link>
                 </div>
                 <div className="hidden md:block">
                     <nav>

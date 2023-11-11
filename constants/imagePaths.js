@@ -11,4 +11,9 @@ export const HERO_MOBILE_URL = "/images/hero-mobile.png";
 export const FULL_STAR_ICON_URL = "/images/icons/full-star-icon.svg";
 export const HALF_STAR_ICON_URL = "/images/icons/half-star-icon.svg";
 export const EMPTY_STAR_ICON_URL = "/images/icons/empty-star-icon.svg";
-
+export const SOCIAL_MEDIAS_ICON_URL = "/images/icons/social-medias.svg";
+export const ENVELOPE_ICON_URL = "/images/icons/envelope-icon.svg";
+export const GREEN_CHECK_ICON = "/images/icons/green-check-icon.svg";
+export const ARROW_LEFT_ICON = "/images/icons/arrow-icon-left.svg";
+export const ARROW_RIGHT_ICON = "/images/icons/arrow-icon-right.svg";
+export const BREADCRUMB_SEPARATOR_ICON = "/images/icons/breadcrumb-separator-icon.svg";

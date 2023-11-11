@@ -11,12 +11,17 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'featured-style-casual': "url('/images/featured-styles/casual.png')",
+        'featured-style-formal': "url('/images/featured-styles/formal.png')",
+        'featured-style-party': "url('/images/featured-styles/party.png')",
+        'featured-style-gym': "url('/images/featured-styles/gym.png')",
+        'newsletter': 'background: linear-gradient(90deg, black 50%, white 50%)'
       },
       backgroundColor: {
         'f2f0f1': '#F2F0F1',
         'discount-pill': '#ff3333',
         'featured-style': '#F0F0F0',
-        'footer': '#F0F0F0'
+        'footer': '#F0F0F0',
       },
       height: {
         'banner': '663px',
@@ -41,17 +46,18 @@ module.exports = {
       width: {
         'cta-w': '210px',
         'product': '290px',
-        'view-all': '218px'
+        'view-all': '218px',
+        'footer-information': '300px',
+        'newsletter-headline': '550px',
+        'newsletter-form-d': '350px'
       },
       colors: {
         'discount-pill': '#ff3333',
-        'payment-method-border': '#D6DCE5'
+        'payment-method-border': '#D6DCE5',
+        'footer': '#F0F0F0'
       },
-      backgroundImage: {
-        'featured-style-casual': "url('/images/featured-styles/casual.png')",
-        'featured-style-formal': "url('/images/featured-styles/formal.png')",
-        'featured-style-party': "url('/images/featured-styles/party.png')",
-        'featured-style-gym': "url('/images/featured-styles/gym.png')"
+      minHeight: {
+        'review-item': '256px'
       }
     },
     container: {

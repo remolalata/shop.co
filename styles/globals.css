@@ -7,24 +7,28 @@
     font-family: "Satoshi";
     font-weight: 400;
     src: url("./fonts/satoshi/Satoshi-Regular.otf");
+    font-display: swap;
   }
 
   @font-face {
     font-family: "Satoshi Medium";
     font-weight: 500;
     src: url("./fonts/satoshi/Satoshi-Medium.otf");
+    font-display: swap;
   }
 
   @font-face {
     font-family: "Satoshi Bold";
     font-weight: 700;
     src: url("./fonts/satoshi/Satoshi-Bold.otf");
+    font-display: swap;
   }
 
   @font-face {
     font-family: "Integral Bold";
     font-weight: 700;
     src: url("./fonts/integral-cf/IntegralCF-Bold.otf");
+    font-display: swap;
   }
 
   html {
@@ -38,6 +42,19 @@
 
   .rating-stars span {
     pointer-events: none;
+  }
+
+  .custom-next-arrow, .custom-prev-arrow {
+    position: absolute;
+    top: -75px;
+  }
+
+  .custom-next-arrow {
+    right: 20px;
+  }
+
+  .custom-prev-arrow {
+    right: 60px;
   }
 }
 
