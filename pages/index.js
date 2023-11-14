@@ -8,13 +8,13 @@ import Layout from "@/components/Layout/layout";
 import Footer from "@/components/Layout/Footer/footer";
 import Banner from "@/components/Banner/banner";
 import Brands from "@/components/Brands/brands";
-import ProductListing from "@/components/ProductListing/productListing";
 import FeaturedStyles from "@/components/FeaturedStyles/featuredStyles";
 import Separator from "@/components/Separator/separator";
 import ReviewList from "@/components/ReviewList/reviewList";
 
 import { getAllShopMetric, getAllBrands, getAllProducts, getAllReviews } from "@/helpers/api-util";
 import { OUR_HAPPY_CUSTOMERS, NEW_ARRIVALS, TOP_SELLING } from "@/constants/labelsConfig";
+import FeautredProducts from "@/components/ProductListing/featuredProducts";
 
 
 const Home = props => {
@@ -50,7 +50,7 @@ const Home = props => {
         <div className="h-full mt-12 md:mt-16 overflow-hidden md:overflow-auto">
           <h2 className="font-integral-bold text-3xl md:text-5xl mb-8 md:mb-14 text-center">{NEW_ARRIVALS}</h2>
           <div className="container px-4">
-            <ProductListing filterBy="new-arrival" />
+            <FeautredProducts />
           </div>
         </div>
 
@@ -61,7 +61,7 @@ const Home = props => {
         <div className="h-full overflow-hidden md:overflow-auto">
           <h2 className="font-integral-bold text-3xl md:text-5xl mb-8 md:mb-14 text-center">{TOP_SELLING}</h2>
           <div className="container px-4">
-            <ProductListing filterBy="top-selling" />
+            <FeautredProducts filterBy="top-selling" />
           </div>
         </div>
 

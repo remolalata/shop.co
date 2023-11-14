@@ -1,10 +1,10 @@
+import Link from "next/link";
 import Image from "next/image";
 
 import Rating from "../Rating/rating";
 
 import { CURRENCY_CODE } from "@/constants/labelsConfig";
 import { calculateDiscountedPrice } from "@/utils/utils";
-import Link from "next/link";
 
 const Product = ({ product }) => {
 
@@ -30,9 +30,9 @@ const Product = ({ product }) => {
     );
 
     return (
-        <div>
-            <div className="w-product h-product">
-                <Image src={product.imagePath} width={295} height={298} className="h-full rounded-2xl mb-4" alt={product.name} />
+        <Link href="#">
+            <div className="h-product relative h-product-m md:h-product w-product-m md:w-product">
+                <Image src={product.imagePath} fill className="h-full rounded-2xl mb-4" alt={product.name} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
             </div>
 
             <h3 className="font-satoshi-bold text-base md:text-xl mt-2.5 md:mt-4">
@@ -48,7 +48,7 @@ const Product = ({ product }) => {
             </div>
 
             {priceElement}
-        </div>
+        </Link>
     )
 }
 

@@ -31,6 +31,11 @@
     font-display: swap;
   }
 
+  .overflow-x-scroll::-webkit-scrollbar {
+    display: none;
+    /* This hides the scrollbar in WebKit browsers (Chrome, Safari, etc.) */
+  }
+
   html {
     font-family: "Satoshi", system-ui, sans-serif;
   }

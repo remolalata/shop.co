@@ -23,10 +23,20 @@ module.exports = {
         'featured-style': '#F0F0F0',
         'footer': '#F0F0F0',
       },
+      width: {
+        'cta-w': '210px',
+        'product': '290px',
+        'product-m': '198px',
+        'view-all': '218px',
+        'footer-information': '300px',
+        'newsletter-headline': '550px',
+        'newsletter-form-d': '350px'
+      },
       height: {
         'banner': '663px',
         'cta-h': '52px',
         'product': '298px',
+        'product-m': '200px',
         'view-all': '52px',
         'featured-styles-item': '190px',
         'featured-styles-item-md': '289px'
@@ -42,14 +52,6 @@ module.exports = {
       fontSize: {
         'banner-heading': ['64px', '64px'],
         '40px': '40px'
-      },
-      width: {
-        'cta-w': '210px',
-        'product': '290px',
-        'view-all': '218px',
-        'footer-information': '300px',
-        'newsletter-headline': '550px',
-        'newsletter-form-d': '350px'
       },
       colors: {
         'discount-pill': '#ff3333',
