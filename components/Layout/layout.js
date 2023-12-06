@@ -14,7 +14,7 @@ const Layout = props => {
     }
 
     return (
-        <div className="antialiased">
+        <div className={`antialiased ${props.customClasses}`}>
             <div className={overlayStyles} onClick={handleToggleMenuClick}></div>
             <main className={`${props.customClasses}`}>{props.children}</main>
         </div>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import Rating from "../Rating/rating";
+import Button from "../Button/button";
 
 import { CURRENCY_CODE } from "@/constants/labelsConfig";
 import { calculateDiscountedPrice } from "@/utils/utils";
@@ -30,13 +31,13 @@ const Product = ({ product }) => {
     );
 
     return (
-        <Link href="#">
+        <Button>
             <div className="h-product relative h-product-m md:h-product w-product-m md:w-product">
                 <Image src={product.imagePath} fill className="h-full rounded-2xl mb-4" alt={product.name} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
             </div>
 
-            <h3 className="font-satoshi-bold text-base md:text-xl mt-2.5 md:mt-4">
-                <Link href="#">{product.name}</Link>
+            <h3 className="font-satoshi-bold text-base md:text-xl mt-2.5 md:mt-4 text-left">
+                <Link href="#" className="inline-block">{product.name}</Link>
             </h3>
             <div className="flex items-center my-1">
                 <div>
@@ -48,7 +49,7 @@ const Product = ({ product }) => {
             </div>
 
             {priceElement}
-        </Link>
+        </Button>
     )
 }
 

@@ -68,3 +68,16 @@
     font-family: "Satoshi Medium";
   }
 }
+
+.range-slider .range-slider__thumb,
+.range-slider .range-slider__range {
+  background: #000000 !important;
+}
+
+.range-slider__thumb::after {
+  content: "$" attr(aria-valuetext);
+  position: absolute;
+  top: 25px;
+  font-size: 14px;
+  left: -5px
+}

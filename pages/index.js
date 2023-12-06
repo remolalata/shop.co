@@ -65,11 +65,11 @@ const Home = props => {
           </div>
         </div>
 
-        <div className="container px-4 mb-20">
+        <div className="container px-4 my-12 md:my-20">
           <FeaturedStyles />
         </div>
 
-        <div className="container relative px-4 mb-20">
+        <div className="container relative px-4 mb-12 md:mb-20">
           <h2 className="mb-6 md:mb-10 text-3xl md:text-5xl font-integral-bold">{OUR_HAPPY_CUSTOMERS}</h2>
           <div className="-mr-5">
             <ReviewList />

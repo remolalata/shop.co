@@ -15,13 +15,15 @@ module.exports = {
         'featured-style-formal': "url('/images/featured-styles/formal.png')",
         'featured-style-party': "url('/images/featured-styles/party.png')",
         'featured-style-gym': "url('/images/featured-styles/gym.png')",
-        'newsletter': 'background: linear-gradient(90deg, black 50%, white 50%)'
+        'newsletter': 'background: linear-gradient(90deg, black 50%, white 50%)',
+        'color-selected': "url('/images/icons/white-check-icon.svg')",
       },
       backgroundColor: {
         'f2f0f1': '#F2F0F1',
         'discount-pill': '#ff3333',
         'featured-style': '#F0F0F0',
         'footer': '#F0F0F0',
+        'pill': '#F0F0F0'
       },
       width: {
         'cta-w': '210px',
@@ -30,7 +32,9 @@ module.exports = {
         'view-all': '218px',
         'footer-information': '300px',
         'newsletter-headline': '550px',
-        'newsletter-form-d': '350px'
+        'newsletter-form-d': '350px',
+        'filters': '300px',
+        'filter-color': '35px'
       },
       height: {
         'banner': '663px',
@@ -39,7 +43,8 @@ module.exports = {
         'product-m': '200px',
         'view-all': '52px',
         'featured-styles-item': '190px',
-        'featured-styles-item-md': '289px'
+        'featured-styles-item-md': '289px',
+        'filter-color': '35px'
       },
       fontFamily: {
         'integral-bold': 'Integral Bold',
@@ -59,7 +64,8 @@ module.exports = {
         'footer': '#F0F0F0'
       },
       minHeight: {
-        'review-item': '256px'
+        'review-item': '256px',
+        'filter-price': '90px'
       }
     },
     container: {

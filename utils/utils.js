@@ -27,17 +27,14 @@ export const getProductListingHeading = (id = "") => {
 };
 
 export const calculateDiscountedPrice = (originalPrice, discountPercentage) => {
-    // Validate input
     if (typeof originalPrice !== 'number' || typeof discountPercentage !== 'number') {
         throw new Error('Both originalPrice and discountPercentage must be numbers.');
     }
 
-    // Ensure discountPercentage is in the valid range [0, 100]
     if (discountPercentage < 0 || discountPercentage > 100) {
         throw new Error('Discount percentage must be in the range [0, 100].');
     }
 
-    // Calculate discounted price
     const discountAmount = (originalPrice * discountPercentage) / 100;
     const discountedPrice = originalPrice - discountAmount;
 

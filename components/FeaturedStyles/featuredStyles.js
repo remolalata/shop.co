@@ -4,7 +4,7 @@ import { BROWSE_BY_DRESS_STYLE } from "@/constants/labelsConfig";
 const FeaturedStyles = () => {
 
     return (
-        <div className="bg-featured-style px-6 py-10 md:px-16 md:py-16 mt-20 rounded-3xl">
+        <div className="bg-featured-style px-6 py-10 md:px-16 md:py-16 rounded-3xl">
             <div className="text-center mb-7 md:mb-16">
                 <h2 className="font-integral-bold text-3xl md:text-5xl">{BROWSE_BY_DRESS_STYLE}</h2>
             </div>

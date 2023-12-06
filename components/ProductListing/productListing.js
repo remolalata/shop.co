@@ -8,6 +8,8 @@ const ProductListing = props => {
     const filterBy = props.filterBy ? props.filterBy : "";
     const products = state.products;
 
+    console.log("products", products);
+
     const filteredProducts = () => {
         if (filterBy === "") {
             return products;
